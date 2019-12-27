@@ -3,8 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.tbh.app"
-        minSdkVersion 15
+        applicationId 'com.r3inbowari.imo'
+        minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -25,9 +25,39 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:26.1.0"
     // butterknife
     implementation "com.jakewharton:butterknife:8.8.1"
+    implementation 'com.android.support:support-v4:26.1.0'
     annotationProcessor "com.jakewharton:butterknife-compiler:8.8.1"
+
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxandroid
+    implementation group: 'io.reactivex.rxjava2', name: 'rxandroid', version: '2.1.1'
+    // https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava
+    implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.16'
+
+    //JSOUP
+    implementation 'org.jsoup:jsoup:1.12.1'
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+    implementation 'com.android.support:cardview-v7:26.1.0'//后面的和V7版本号一致就可以，
+
+    // api 'com.github.tcking:giraffeplayer2:0.1.25-lazyLoad'
+    api 'com.github.tcking:giraffeplayer2:0.1.25-full'
+    //for all decoders
+    //for common decoders
+    api 'com.github.tcking:ijkplayer-arm64:0.8.8' //support arm64
+    api 'com.github.tcking:ijkplayer-armv5:0.8.8' //support armv5
+    api 'com.github.tcking:ijkplayer-x86:0.8.8' //support x86
+    api 'com.github.tcking:ijkplayer-x86_64:0.8.8' //support x86_64
+    api 'com.github.tcking:ijkplayer-armv7a:0.8.8' //support x86_64
+    implementation 'ru.noties:scrollable:1.3.0'
+
+    implementation 'com.wang.avi:library:2.1.3'
+
 }

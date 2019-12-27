@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <View
+    <ImageView
+        android:id="@+id/image_title"
+        android:scaleType="centerCrop"
         android:layout_width="match_parent"
         android:layout_height="@dimen/search_target_height"
         android:background="#FFD77575"/>
